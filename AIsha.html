@@ -1,0 +1,401 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Aisha - Responsif &amp; Mobile Friendly
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Scrollbar untuk pesan chat */
+    .chat-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .chat-scroll::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="h-screen flex flex-col bg-gray-100">
+  <div class="flex flex-1 overflow-hidden shadow-lg max-w-full mx-auto w-full bg-white rounded-lg md:max-w-7xl md:mx-auto md:rounded-lg">
+   <!-- Sidebar -->
+   <aside class="hidden md:flex md:flex-col md:w-80 border-r border-gray-300">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-4 border-b border-gray-300">
+     <img alt="Logo chatbot dengan huruf AI berwarna biru dan latar putih" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/bd8d65e6-e59d-43e3-9955-e76fd7b14542.jpg" width="40"/>
+     <div class="flex space-x-4 text-gray-600">
+      <button aria-label="Status" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-circle-notch fa-lg">
+       </i>
+      </button>
+      <button aria-label="Chat baru" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-comment-alt fa-lg">
+       </i>
+      </button>
+      <button aria-label="Menu" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-ellipsis-v fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+    <!-- Pencarian -->
+    <div class="p-3 border-b border-gray-300">
+     <div class="relative text-gray-600">
+      <input class="w-full bg-gray-100 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500" name="search" placeholder="Cari atau mulai chat baru" type="search"/>
+      <div class="absolute left-3 top-2.5">
+       <i class="fas fa-search text-gray-400">
+       </i>
+      </div>
+     </div>
+    </div>
+    <!-- Daftar chat -->
+    <div class="flex-1 overflow-y-auto">
+     <ul>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf AI berwarna biru dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/88474821-4ec7-4461-3813-30506709a8ab.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Chatbot AI
+         </h3>
+         <span class="text-xs text-gray-500">
+          12:45
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Halo! Ada yang bisa saya bantu?
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Bot berwarna ungu dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/5ee23566-cf28-4820-f6c5-2e34d28054ad.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Bot Support
+         </h3>
+         <span class="text-xs text-gray-500">
+          Kemarin
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Masalah Anda sudah terselesaikan.
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Sys berwarna hijau dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/6ece45b6-573a-425f-e3f3-3a6c1975cf6b.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Sistem
+         </h3>
+         <span class="text-xs text-gray-500">
+          2 hari lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Pembaruan sistem selesai.
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf AI berwarna biru dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/88474821-4ec7-4461-3813-30506709a8ab.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Chatbot AI
+         </h3>
+         <span class="text-xs text-gray-500">
+          3 hari lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Silakan bertanya kapan saja.
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Bot berwarna ungu dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/5ee23566-cf28-4820-f6c5-2e34d28054ad.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Bot Support
+         </h3>
+         <span class="text-xs text-gray-500">
+          Minggu lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Cek inbox Anda untuk detailnya.
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Sys berwarna hijau dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/6ece45b6-573a-425f-e3f3-3a6c1975cf6b.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Sistem
+         </h3>
+         <span class="text-xs text-gray-500">
+          Minggu lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Backup berhasil dilakukan.
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf AI berwarna biru dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/88474821-4ec7-4461-3813-30506709a8ab.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Chatbot AI
+         </h3>
+         <span class="text-xs text-gray-500">
+          2 minggu lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Ayo ngobrol kapan saja!
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Bot berwarna ungu dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/5ee23566-cf28-4820-f6c5-2e34d28054ad.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Bot Support
+         </h3>
+         <span class="text-xs text-gray-500">
+          2 minggu lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Ada yang bisa saya bantu?
+        </p>
+       </div>
+      </li>
+      <li class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200">
+       <img alt="Avatar kontak chat dengan huruf Sys berwarna hijau dan latar putih" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/6ece45b6-573a-425f-e3f3-3a6c1975cf6b.jpg" width="50"/>
+       <div class="ml-3 flex-1">
+        <div class="flex justify-between items-center">
+         <h3 class="font-semibold text-gray-900">
+          Sistem
+         </h3>
+         <span class="text-xs text-gray-500">
+          3 minggu lalu
+         </span>
+        </div>
+        <p class="text-sm text-gray-600 truncate">
+         Jadwal maintenance sudah ditetapkan.
+        </p>
+       </div>
+      </li>
+     </ul>
+    </div>
+   </aside>
+   <!-- Area chat -->
+   <section class="flex flex-col flex-1">
+    <!-- Header chat -->
+    <header class="flex items-center p-4 border-b border-gray-300">
+     <img alt="AIsha, warna pastel lembut, tersenyum lembut, gaya seni digital" class="rounded-full w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ec5aa2f8-2f10-43c8-ed60-57be3159e047.jpg" width="50"/>
+     <div class="ml-3 flex-1 min-w-0">
+      <h2 class="font-semibold text-gray-900 truncate">
+       AIsha
+      </h2>
+      <p class="text-xs text-green-600 truncate">
+       Online
+      </p>
+     </div>
+     <div class="flex space-x-4 text-gray-600">
+      <button aria-label="Cari di chat" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-search">
+       </i>
+      </button>
+      <button aria-label="Lampirkan file" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-paperclip">
+       </i>
+      </button>
+      <button aria-label="Opsi lainnya" class="hover:bg-gray-200 p-2 rounded-full transition">
+       <i class="fas fa-ellipsis-v">
+       </i>
+      </button>
+     </div>
+    </header>
+    <!-- Pesan chat -->
+    <main aria-live="polite" aria-relevant="additions" class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 bg-gray-50 chat-scroll" id="chatMessages" role="log">
+     <div class="flex items-start space-x-3">
+      <img alt="Avatar pengguna lingkaran dengan huruf You berwarna biru" class="rounded-full w-10 h-10 object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/5c712fa5-813d-4204-2caa-cbab0c676569.jpg" width="40"/>
+      <div>
+       <div class="bg-blue-600 text-white p-3 rounded-lg rounded-bl-none max-w-xs sm:max-w-md break-words">
+        Hai! Apakah kamu AIsha?
+       </div>
+       <span class="text-xs text-gray-400 mt-1 block">
+        10:00
+       </span>
+      </div>
+     </div>
+     <div class="flex items-start space-x-3 justify-end">
+      <div>
+       <div class="bg-white p-3 rounded-lg rounded-br-none max-w-xs sm:max-w-md break-words border border-gray-300">
+        Ya, benar! Ada yang bisa saya bantu?
+       </div>
+       <span class="text-xs text-gray-400 mt-1 block text-right">
+        10:01
+       </span>
+      </div>
+      <img alt="Avatar chatbot lingkaran dengan huruf AI berwarna biru dan putih" class="rounded-full w-10 h-10 object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/872e6ee4-4df5-46fd-5e06-11a17ab13997.jpg" width="40"/>
+     </div>
+     <div class="flex items-start space-x-3">
+      <img alt="Avatar pengguna lingkaran dengan huruf You berwarna biru" class="rounded-full w-10 h-10 object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/5c712fa5-813d-4204-2caa-cbab0c676569.jpg" width="40"/>
+      <div>
+       <div class="bg-blue-600 text-white p-3 rounded-lg rounded-bl-none max-w-xs sm:max-w-md break-words">
+        Bisa ceritakan tentang dirimu?
+       </div>
+       <span class="text-xs text-gray-400 mt-1 block">
+        10:02
+       </span>
+      </div>
+     </div>
+     <div class="flex items-start space-x-3 justify-end">
+      <div>
+       <div class="bg-white p-3 rounded-lg rounded-br-none max-w-xs sm:max-w-md break-words border border-gray-300">
+        Tentu! Saya AIsha, siap menemani dan membantu kamu.
+       </div>
+       <span class="text-xs text-gray-400 mt-1 block text-right">
+        10:03
+       </span>
+      </div>
+      <img alt="Avatar chatbot lingkaran dengan huruf AI berwarna biru dan putih" class="rounded-full w-10 h-10 object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/872e6ee4-4df5-46fd-5e06-11a17ab13997.jpg" width="40"/>
+     </div>
+    </main>
+    <!-- Input chat -->
+    <form class="flex items-center p-3 border-t border-gray-300 bg-white" id="chatForm" onsubmit="return false">
+     <button aria-label="Emoji" class="text-gray-500 hover:text-gray-700 mr-3" type="button">
+      <i class="far fa-smile fa-lg">
+      </i>
+     </button>
+     <input autocomplete="off" class="flex-1 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" id="messageInput" placeholder="Ketik pesan" required="" type="text"/>
+     <button aria-label="Kirim pesan" class="ml-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-2 transition" type="submit">
+      <i class="fas fa-paper-plane">
+      </i>
+     </button>
+    </form>
+   </section>
+  </div>
+  <script>
+   const chatForm = document.getElementById('chatForm');
+    const messageInput = document.getElementById('messageInput');
+    const chatMessages = document.getElementById('chatMessages');
+
+    function appendMessage({ text, fromUser }) {
+      const messageWrapper = document.createElement('div');
+      messageWrapper.classList.add('flex', 'items-start', 'space-x-3');
+      if (fromUser) {
+        messageWrapper.classList.remove('justify-end');
+      } else {
+        messageWrapper.classList.add('justify-end');
+      }
+
+      const avatar = document.createElement('img');
+      avatar.classList.add('rounded-full', 'w-10', 'h-10', 'object-cover');
+      if (fromUser) {
+        avatar.src = 'https://placehold.co/40x40/png?text=You';
+        avatar.alt = 'Avatar pengguna lingkaran dengan huruf You berwarna biru';
+      } else {
+        avatar.src = 'https://placehold.co/40x40/png?text=AI';
+        avatar.alt = 'Avatar chatbot lingkaran dengan huruf AI berwarna biru dan putih';
+      }
+
+      const messageContentWrapper = document.createElement('div');
+      const messageBubble = document.createElement('div');
+      const timeStamp = document.createElement('span');
+      timeStamp.classList.add('text-xs', 'text-gray-400', 'mt-1', 'block');
+
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      const hour12 = hours % 12 || 12;
+      const timeString = `${hour12}:${minutes.toString().padStart(2, '0')}`;
+      timeStamp.textContent = timeString;
+
+      if (fromUser) {
+        messageBubble.classList.add(
+          'bg-blue-600',
+          'text-white',
+          'p-3',
+          'rounded-lg',
+          'rounded-bl-none',
+          'max-w-xs',
+          'sm:max-w-md',
+          'break-words'
+        );
+        messageContentWrapper.appendChild(messageBubble);
+        messageContentWrapper.appendChild(timeStamp);
+        messageWrapper.appendChild(avatar);
+        messageWrapper.appendChild(messageContentWrapper);
+      } else {
+        messageBubble.classList.add(
+          'bg-white',
+          'p-3',
+          'rounded-lg',
+          'rounded-br-none',
+          'max-w-xs',
+          'sm:max-w-md',
+          'break-words',
+          'border',
+          'border-gray-300'
+        );
+        messageContentWrapper.appendChild(messageBubble);
+        messageContentWrapper.appendChild(timeStamp);
+        messageWrapper.appendChild(messageContentWrapper);
+        messageWrapper.appendChild(avatar);
+      }
+
+      messageBubble.textContent = text;
+      chatMessages.appendChild(messageWrapper);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function botReply(userMessage) {
+      const lower = userMessage.toLowerCase();
+      let reply = "Maaf, saya tidak mengerti. Bisa ulangi dengan kata lain?";
+
+      if (lower.includes('halo') || lower.includes('hai') || lower.includes('hi')) {
+        reply = 'Halo! Ada yang bisa saya bantu?';
+      } else if (lower.includes('dirimu') || lower.includes('tentang kamu')) {
+        reply =
+          'Saya AIsha, siap menemani dan membantu kamu.';
+      } else if (lower.includes('bantuan') || lower.includes('tolong')) {
+        reply = 'Tentu! Silakan tanyakan apa saja atau beri tahu saya yang kamu butuhkan.';
+      } else if (lower.includes('terima kasih') || lower.includes('makasih')) {
+        reply = 'Sama-sama! 😊';
+      }
+
+      setTimeout(() => {
+        appendMessage({ text: reply, fromUser: false });
+      }, 800);
+    }
+
+    chatForm.addEventListener('submit', () => {
+      const message = messageInput.value.trim();
+      if (!message) return;
+      appendMessage({ text: message, fromUser: true });
+      messageInput.value = '';
+      botReply(message);
+    });
+  </script>
+ </body>
+</html>
