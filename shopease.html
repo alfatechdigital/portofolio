@@ -1,0 +1,454 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ShopEase - Your Online Store
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+     <a class="flex items-center space-x-2" href="#">
+      <img alt="ShopEase logo, stylized SE letters in blue and white" class="h-10 w-10" height="40" src="https://storage.googleapis.com/a1aa/image/9a769e96-4ef1-48f2-3ce1-a66a30fc059a.jpg" width="40"/>
+      <span class="text-2xl font-semibold text-blue-600">
+       ShopEase
+      </span>
+     </a>
+     <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a class="hover:text-blue-600 transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-blue-600 transition" href="#products">
+       Products
+      </a>
+      <a class="hover:text-blue-600 transition" href="#about">
+       About
+      </a>
+      <a class="hover:text-blue-600 transition" href="#contact">
+       Contact
+      </a>
+     </nav>
+     <div class="flex items-center space-x-4">
+      <button aria-label="Search" class="text-gray-600 hover:text-blue-600 transition focus:outline-none">
+       <i class="fas fa-search fa-lg">
+       </i>
+      </button>
+      <button aria-label="User Account" class="text-gray-600 hover:text-blue-600 transition focus:outline-none">
+       <i class="fas fa-user fa-lg">
+       </i>
+      </button>
+      <button aria-label="Shopping Cart" class="relative text-gray-600 hover:text-blue-600 transition focus:outline-none">
+       <i class="fas fa-shopping-cart fa-lg">
+       </i>
+       <span class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center font-semibold">
+        3
+       </span>
+      </button>
+      <button aria-label="Open menu" class="md:hidden text-gray-600 hover:text-blue-600 transition focus:outline-none" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium" href="#">
+     Home
+    </a>
+    <a class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium" href="#products">
+     Products
+    </a>
+    <a class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium" href="#about">
+     About
+    </a>
+    <a class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative bg-white overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 rounded-lg shadow-md">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 md:py-20">
+    <div class="space-y-6">
+     <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+      Discover the Best Deals
+      <br/>
+      on Quality Products
+     </h1>
+     <p class="text-lg text-gray-600 max-w-xl">
+      ShopEase offers a wide range of products at unbeatable prices.
+          Experience seamless shopping with fast delivery and easy returns.
+     </p>
+     <a class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 transition" href="#products">
+      Shop Now
+     </a>
+    </div>
+    <div class="flex justify-center md:justify-end">
+     <img alt="Illustration of a shopping cart filled with colorful boxes and packages, symbolizing online shopping" class="rounded-lg shadow-lg w-full max-w-md" height="400" src="https://storage.googleapis.com/a1aa/image/323f1aec-2716-403f-e89b-ebe9f89e91b0.jpg" width="500"/>
+    </div>
+   </div>
+  </section>
+  <!-- Products Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-24" id="products">
+   <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
+    Featured Products
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Wireless over-ear headphones in black with cushioned ear pads and sleek design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/e57c13c8-a81a-4655-d5cc-1083cce2683e.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Wireless Headphones
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Experience high-quality sound with noise cancellation and long
+            battery life.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $99.99
+       </span>
+       <button aria-label="Add Wireless Headphones to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Smart watch with black strap and digital display showing time and health stats" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/af08b6d4-3b96-4e58-f9ce-8714bf21e543.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Smart Watch
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Stay connected and track your fitness with this sleek smart watch.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $149.99
+       </span>
+       <button aria-label="Add Smart Watch to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Mechanical gaming keyboard with RGB backlighting and ergonomic design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/08f4eb40-e0b0-4783-75f1-5000d0579778.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Gaming Keyboard
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Enhance your gaming experience with responsive keys and customizable
+            lighting.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $79.99
+       </span>
+       <button aria-label="Add Gaming Keyboard to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Ultra HD 4K computer monitor with thin bezels and vibrant display" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/5bcc610b-5d47-47b6-2fc1-fb7df5789eb8.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       4K Monitor
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Enjoy stunning visuals and crisp details on this 27-inch 4K monitor.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $329.99
+       </span>
+       <button aria-label="Add 4K Monitor to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Portable Bluetooth speaker in black with mesh grille and compact design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/274798e5-aa4e-40bb-d8ba-d0f47ce2452d.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Bluetooth Speaker
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Take your music anywhere with this waterproof and powerful speaker.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $59.99
+       </span>
+       <button aria-label="Add Bluetooth Speaker to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Slim fitness tracker wristband with digital display showing steps and heart rate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/9be9b057-6a50-4449-495e-f32137e2b5b6.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Fitness Tracker
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Monitor your health and activity with this lightweight fitness tracker.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $49.99
+       </span>
+       <button aria-label="Add Fitness Tracker to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Modern smartphone with large screen displaying colorful app icons" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/388fe5e7-c5f6-44e0-61d5-25de74415eb4.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Smartphone
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Stay connected with the latest smartphone featuring a powerful camera.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $699.99
+       </span>
+       <button aria-label="Add Smartphone to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Compact digital camera with zoom lens and black body" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/2612a5ba-002d-4e71-40eb-09f4883ebfd9.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Digital Camera
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Capture your moments with this high-resolution digital camera.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $249.99
+       </span>
+       <button aria-label="Add Digital Camera to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Sleek silver laptop open on a white surface with a colorful screen" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/4877c1e8-c98d-4ee6-d856-98ee07d87d36.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Laptop
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Powerful and portable laptop for work, gaming, and entertainment.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $999.99
+       </span>
+       <button aria-label="Add Laptop to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Modern tablet with black bezel and colorful app icons on screen" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/8a2b3320-e798-45c4-c39a-b088efa7c92b.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Tablet
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Lightweight tablet perfect for reading, browsing, and streaming.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $399.99
+       </span>
+       <button aria-label="Add Tablet to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Ergonomic wireless mouse in black with side buttons and scroll wheel" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/f1356703-29c3-4bec-3f8e-848a6712993d.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Wireless Mouse
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Comfortable and precise wireless mouse with long battery life.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $29.99
+       </span>
+       <button aria-label="Add Wireless Mouse to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Portable external hard drive in black with USB cable" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/a85d7ba6-46e7-4fd7-2203-a451f86f5de5.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       External Hard Drive
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Store your files securely with this fast and reliable external hard
+            drive.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $89.99
+       </span>
+       <button aria-label="Add External Hard Drive to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+     <img alt="Smart home speaker in white with touch controls and LED light ring" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/6615d6cb-4a22-4fcd-5dbf-49d45fbbed73.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-lg font-semibold text-gray-900 mb-2">
+       Smart Home Speaker
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Control your smart home and enjoy music with voice assistant support.
+      </p>
+      <div class="mt-4 flex items-center justify-between">
+       <span class="text-xl font-bold text-blue-600">
+        $129.99
+       </span>
+       <button aria-label="Add Smart Home Speaker to cart" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 rounded-lg shadow-md mb-24" id="about">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+     <h2 class="text-3xl font-extrabold text-gray-900 mb-6">
+      About ShopEase
+     </h2>
+     <p class="text-gray-700 mb-4 leading-relaxed">
+      ShopEase is your trusted online marketplace offering a wide variety
+          of products from electronics to lifestyle essentials. We are committed
+          to providing the best shopping experience with quality products,
+          competitive prices, and excellent customer service.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      Our mission is to make shopping easy, enjoyable, and accessible for
+          everyone. Join thousands of happy customers who trust ShopEase for
+          their daily needs.
+     </p>
+    </div>
+    <div class="flex justify-center md:justify-end">
+     <img alt="Happy diverse group of customers shopping online using laptops and smartphones" class="rounded-lg shadow-lg w-full max-w-md" height="400" src="https://storage.googleapis.com/a1aa/image/049411b9-e6da-464d-5cb9-53cd48d4f7b4.jpg" width="500"/>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white rounded-lg shadow-md mb-24" id="contact">
+   <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
+    Contact Us
+   </h2>
+   <div class="max-w-3xl mx-auto">
+    <form action="#" aria-label="Contact form" class="space-y-6" method="POST">
+     <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1" for="name">
+       Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1" for="email">
+       Email
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1" for="message">
+       Message
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="message" name="message" placeholder="Write your message here" required="" rows="4"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 transition" type="submit">
+       Send Message
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-600 text-sm">
+     © 2024 ShopEase. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="text-gray-600 hover:text-blue-600 transition" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="text-gray-600 hover:text-blue-600 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="text-gray-600 hover:text-blue-600 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="text-gray-600 hover:text-blue-600 transition" href="#">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
